@@ -1191,6 +1191,8 @@ GameObject:
   - component: {fileID: 2046598295}
   - component: {fileID: 2046598294}
   - component: {fileID: 2046598297}
+  - component: {fileID: 2046598299}
+  - component: {fileID: 2046598298}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1306,11 +1308,45 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &2046598298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2046598293}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90bd4089cf3d36a4e81d34187476fbb9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 5
+  jumptPower: 20
+  groundLayerMask:
+    serializedVersion: 2
+    m_Bits: 55
+  cameraContainer: {fileID: 828725476}
+  minXLook: -85
+  maxXLook: 85
+  lookSensitivity: 0.1
+--- !u!114 &2046598299
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2046598293}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f11ea549f4f8b4147b064f57484a3ebd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controller: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 705507995}
+  - {fileID: 281625878}
   - {fileID: 962986203}
   - {fileID: 2046598296}
-  - {fileID: 281625878}
