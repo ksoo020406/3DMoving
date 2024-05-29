@@ -108,12 +108,12 @@ public class PlayerController : MonoBehaviour
         // 플레이어를 기준으로 책상다리 형태의 레이 4개를 추가
         Ray[] rays = new Ray[4]
         {
-            // 플레이어의 앞뒤 0.2f, 높이 0.05f 위치에서 down 방향으로 레이가 출발
-            new Ray(transform.position + (transform.forward * 0.2f) + (transform.up * 0.05f), Vector3.down),
-            new Ray(transform.position + (-transform.forward * 0.2f) + (transform.up * 0.05f), Vector3.down),
-            // 플레이어의 양옆 0.2f, 높이 0.05f 위치에서 down 방향으로 레이가 출발
-            new Ray(transform.position + (transform.right * 0.2f) + (transform.up * 0.05f), Vector3.down),
-            new Ray(transform.position + (-transform.right * 0.2f) + (transform.up * 0.05f), Vector3.down)
+            // 플레이어의 앞뒤 0.2f, 높이 0.1f 위치에서 down 방향으로 레이가 출발
+            new Ray(transform.position + (transform.forward * 0.2f) + (transform.up * 0.1f), Vector3.down),
+            new Ray(transform.position + (-transform.forward * 0.2f) + (transform.up * 0.1f), Vector3.down),
+            // 플레이어의 양옆 0.2f, 높이 0.1f 위치에서 down 방향으로 레이가 출발
+            new Ray(transform.position + (transform.right * 0.2f) + (transform.up * 0.1f), Vector3.down),
+            new Ray(transform.position + (-transform.right * 0.2f) + (transform.up * 0.1f), Vector3.down)
         };
 
         for (int i = 0; i < rays.Length; i++)
