@@ -950,6 +950,7 @@ GameObject:
   - component: {fileID: 660620531}
   - component: {fileID: 660620533}
   - component: {fileID: 660620532}
+  - component: {fileID: 660620534}
   m_Layer: 5
   m_Name: Stamina
   m_TagString: Untagged
@@ -1015,6 +1016,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 660620530}
   m_CullTransparentMesh: 1
+--- !u!114 &660620534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 660620530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23491c694cc9bf549ab560407ee39b76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  curValue: 0
+  startValue: 100
+  maxValue: 100
+  passiveValue: 5
+  uiBar: {fileID: 373982821}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -1639,6 +1657,7 @@ GameObject:
   - component: {fileID: 1621941713}
   - component: {fileID: 1621941715}
   - component: {fileID: 1621941714}
+  - component: {fileID: 1621941716}
   m_Layer: 5
   m_Name: Health
   m_TagString: Untagged
@@ -1705,6 +1724,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1621941712}
   m_CullTransparentMesh: 1
+--- !u!114 &1621941716
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1621941712}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23491c694cc9bf549ab560407ee39b76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  curValue: 0
+  startValue: 100
+  maxValue: 100
+  passiveValue: 1
+  uiBar: {fileID: 228268856}
 --- !u!1 &1716041953
 GameObject:
   m_ObjectHideFlags: 0
@@ -1819,6 +1855,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1999828667}
+  - component: {fileID: 1999828668}
   m_Layer: 0
   m_Name: Conditions
   m_TagString: Untagged
@@ -1843,6 +1880,20 @@ Transform:
   - {fileID: 1621941713}
   m_Father: {fileID: 892333965}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1999828668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1999828666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a41795b17a8241e4296e3c9de6bfaea0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: {fileID: 1621941716}
+  stamina: {fileID: 660620534}
 --- !u!1 &2046598293
 GameObject:
   m_ObjectHideFlags: 0
@@ -2043,6 +2094,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 0}
+  condition: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
