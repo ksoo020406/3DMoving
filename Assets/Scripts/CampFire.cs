@@ -38,7 +38,5 @@ public class CampFire : MonoBehaviour
         {
             things.Remove(damagalbe);
         }
-
-
     }
 }
