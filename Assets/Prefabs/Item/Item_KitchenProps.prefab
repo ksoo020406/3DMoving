@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2607884253376277015}
   - component: {fileID: 7349444471155954038}
   - component: {fileID: 1958900023403653905}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Item_KitchenProps
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -95,6 +95,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebbc5be29f574da4dad6c47c1b0ce151, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  data: {fileID: 11400000, guid: 5ec3e2fe25b545847bd5ce0d7db1e396, type: 2}
 --- !u!1 &6581046000670049861
 GameObject:
   m_ObjectHideFlags: 0
@@ -106,7 +107,7 @@ GameObject:
   - component: {fileID: 2375377890730384567}
   - component: {fileID: 5149178515475299217}
   - component: {fileID: 1394163857343192796}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: KitchenProps_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}

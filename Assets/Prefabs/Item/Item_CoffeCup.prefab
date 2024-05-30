@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8553393325387007724}
   - component: {fileID: 6976151647535409407}
   - component: {fileID: 4201462406890382031}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: CoffeCup
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 5596308865665518352}
   - component: {fileID: 5261354771062733189}
   - component: {fileID: 5448561819469248563}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Item_CoffeCup
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -178,3 +178,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebbc5be29f574da4dad6c47c1b0ce151, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  data: {fileID: 11400000, guid: d74dc2c57cd69d24f8a3694a81a0243e, type: 2}
